@@ -5,7 +5,7 @@ type MenuItemProps = {
 
 const MenuItem = ({ message, button }: MenuItemProps) => {
   return (
-    <button className="relative flex justify-center gap-3 font-bold cursor-pointer select-none sm:justify-start group text-7xl md:text-8xl xl:text-9xl">
+    <button className="relative flex justify-center gap-3 font-bold cursor-pointer select-none lg:justify-start group text-7xl md:text-8xl xl:text-9xl">
       <span className="absolute transition-all duration-300 whitespace-nowrap group-hover:opacity-0">
         {message}
       </span>
