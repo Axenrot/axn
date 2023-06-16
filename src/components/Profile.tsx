@@ -3,7 +3,7 @@ import ProfilePicture from "./ProfilePicture";
 
 const Profile = () => {
   return (
-    <div className="flex flex-col justify-center sm:justify-around sm:flex-row">
+    <div className="flex flex-col justify-center w-full sm:justify-around sm:flex-row">
       <ProfilePicture />
       <ProfileInfo />
     </div>
