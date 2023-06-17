@@ -1,14 +1,19 @@
 "use client";
 import useTouchScreenCheck from "@/hooks/useTouchScreenCheck";
+import { Dispatch, SetStateAction } from "react";
 
 type MenuItemProps = {
   message: string;
   button: string;
+  selectOption: Dispatch<SetStateAction<string>>;
 };
 
-const MenuItem = ({ message, button }: MenuItemProps) => {
+const MenuItem = ({ message, button, selectOption }: MenuItemProps) => {
   return (
-    <button className="relative flex justify-center gap-3 font-bold cursor-pointer select-none lg:justify-start group text-7xl md:text-8xl xl:text-9xl">
+    <button
+      onClick={() => selectOption(button)}
+      className="relative flex justify-center gap-3 font-bold cursor-pointer select-none lg:justify-start group text-7xl md:text-8xl xl:text-9xl"
+    >
       <span
         className={`absolute transition-all duration-300 whitespace-nowrap ${
           useTouchScreenCheck() ? "opacity-0" : "group-hover:opacity-0"
