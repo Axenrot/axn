@@ -9,12 +9,12 @@ const Home = () => {
   const [selectedOption, setSelectedOption] = useState("");
   return (
     <main
-      className={`flex flex-col items-center gap-12 justify-center w-full h-full ${
+      className={`flex flex-col items-center gap-12 overflow-hidden justify-center w-full h-full ${
         selectedOption ? "" : ""
-      } border`}
+      }`}
     >
       <div
-        className={`flex container flex-col items-center justify-center h-full gap-6 border-red-500 ${
+        className={`flex container flex-col items-center justify-center h-full gap-6 ${
           selectedOption
             ? "flex-row  lg:gap-24 sm:flex-row"
             : " lg:gap-24 sm:flex-row"
