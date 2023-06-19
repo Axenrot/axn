@@ -43,12 +43,12 @@
     opacity: 0%;
   }
   100% {
-    transform: translate(200%);
+    transform: translate(0%, -200%);
   }
 }
 
 .fadeout {
-  animation: fadeout linear 0.5s;
+  animation: fadeout ease-out 0.5s;
 }
 
 .fadeout-reverse {
