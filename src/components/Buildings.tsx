@@ -9,7 +9,7 @@ type BuildingsProps = {
 const Buildings = ({ className }: BuildingsProps) => {
   return (
     <div
-      className={`${className} absolute bottom-[100%] z-50 self-start w-screen`}
+      className={`${className} absolute bottom-[100%] z-50 self-start w-full`}
     >
       <span className="relativ h-fit">
         <div
