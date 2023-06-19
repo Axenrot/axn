@@ -11,3 +11,46 @@
 .bouncy {
   animation: bouncy ease-in-out infinite 10s;
 }
+
+@keyframes slideBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.fadein {
+  animation: fadein ease-in 0.5s;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 100%;
+    transform: translate(0%);
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    transform: translate(0%, -200%);
+  }
+}
+
+.fadeout {
+  animation: fadeout ease-out 0.5s;
+}
+
+.fadeout-reverse {
+  animation: fadeout linear reverse 0.5s;
+}

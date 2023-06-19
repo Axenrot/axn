@@ -1,13 +1,16 @@
 import Image from "next/image";
+type ProfilePictureProps = {
+  className: string;
+};
 
-const ProfilePicture = () => {
+const ProfilePicture = ({ className }: ProfilePictureProps) => {
   return (
     <Image
       src="/images/portrait2.png"
       alt="portrait"
-      width={400}
-      height={400}
-      className="bouncy"
+      width={300}
+      height={300}
+      className={`bouncy flex-shrink ${className}`}
     />
   );
 };
