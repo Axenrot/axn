@@ -33,7 +33,7 @@ const Section = ({ selectedOption }: SectionProps) => {
       <section
         className={`${
           trigger && selectedOption ? "opacity-100" : "opacity-0"
-        } self-center container px-3 transition-all duration-300`}
+        } self-center container px-3 h-4/5  overflow-y-auto items-center transition-all duration-300`}
       >
         <h1 className="text-3xl font-semibold opacity-80">{selectedOption}</h1>
         <span className="flex flex-col">
