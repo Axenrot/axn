@@ -27,7 +27,7 @@ const Section = ({ selectedOption }: SectionProps) => {
       id=""
       className={`${
         trigger && selectedOption ? "h-1/2" : "h-9"
-      } relative flex flex-col justify-center transition-all flex-shrink duration-1000 self-end w-full mt-auto text-black  bg-carmesim z-50`}
+      } relative flex flex-col justify-center transition-all flex-shrink duration-1000 self-end w-full mt-auto text-black bg-carmesim z-50`}
     >
       <Buildings className={`h-[90px]`} />
       <section
