@@ -19,10 +19,10 @@ const Home = () => {
         }`}
       >
         <ProfilePicture
-          className={`sm:w-1/3 md:w-1/2 lg:w-1/3 xl:w-1/4 ${
+          className={`sm:w-1/3 md:w-1/2 lg:w-1/4 ${
             selectedOption
-              ? "transition-all duration-1000 absolute opacity-10 translate-y-[-200%] sm:translate-y-0 sm:opacity-100 sm:relative z-10 fadeout sm:animate-none"
-              : "w-4/5 fadein"
+              ? "transition-all duration-1000 absolute opacity-10 translate-y-[-200%] sm:translate-y-0 sm:opacity-100 sm:relative z-10 fadeout-up sm:animate-none"
+              : "w-[250px] fadein"
           }`}
         />
         <ProfileMenu
