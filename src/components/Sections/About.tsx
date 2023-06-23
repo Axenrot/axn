@@ -2,9 +2,9 @@ const About = () => {
   return (
     <div className="flex flex-col gap-[6px] font-semibold">
       <p>
-        Hi, I'm Leon, a highly motivated and passionate Front-End Developer with
-        expertise in React, TypeScript, and Tailwind. I graduated in IT from
-        Universidade Federal do Rio Grande do Norte.
+        Hi, I&apos;m Leon, a highly motivated and passionate Front-End Developer
+        with expertise in React, TypeScript, and Tailwind. I graduated in IT
+        from Universidade Federal do Rio Grande do Norte.
       </p>
       <p>
         With a strong focus on creating user-friendly interfaces, I excel at
@@ -18,7 +18,7 @@ const About = () => {
         deliver seamless and engaging interactions, making sure each design
         element is meticulously crafted.
       </p>
-      <p>Let's collaborate and bring your ideas to life!</p>
+      <p>Let&apos;s collaborate and bring your ideas to life!</p>
     </div>
   );
 };
