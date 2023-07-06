@@ -1,10 +1,10 @@
 const About = () => {
   return (
-    <div className="flex flex-col gap-[6px] font-semibold">
+    <div className="flex flex-col gap-[6px] font-light">
       <p>
         Hi, I&apos;m Leon, a highly motivated and passionate Front-End Developer
         with expertise in React, TypeScript, and Tailwind. I graduated in IT
-        from Universidade Federal do Rio Grande do Norte.
+        from Federal University of Rio Grande do Norte.
       </p>
       <p>
         With a strong focus on creating user-friendly interfaces, I excel at

@@ -24,7 +24,7 @@ const Buildings = ({ className }: BuildingsProps) => {
       <span className="relativ h-fit">
         <div
           style={{
-            backgroundImage: `url(${redBuildings.src})`,
+            backgroundImage: `url(${whiteBuildings.src})`,
             backgroundRepeat: "repeat-x",
             backgroundSize: "450px, 10000%",
             backgroundPosition: "bottom",
