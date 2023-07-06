@@ -59,7 +59,9 @@ const Section = ({ selectedOption }: SectionProps) => {
             trigger && selectedOption ? "opacity-100" : "opacity-0"
           }`}
         >
-          <h1 className="text-3xl font-bold opacity-80">{currentSelection}</h1>
+          <h1 className="w-full text-3xl font-bold text-center opacity-80">
+            {currentSelection}
+          </h1>
           <div className="h-full overflow-y-auto">{renderSelection()}</div>
         </div>
       </section>
