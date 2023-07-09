@@ -24,7 +24,7 @@ const Buildings = ({ className }: BuildingsProps) => {
       <span className="relativ h-fit">
         <div
           style={{
-            backgroundImage: `url(${whiteBuildings.src})`,
+            backgroundImage: `url(${darkBuildings.src})`,
             backgroundRepeat: "repeat-x",
             backgroundSize: "450px, 10000%",
             backgroundPosition: "bottom",
@@ -33,7 +33,21 @@ const Buildings = ({ className }: BuildingsProps) => {
               isTouchDevice ? "20s" : "180s"
             } linear reverse infinite`,
           }}
-          className={`absolute w-screen top-0 z-10 ${className}`}
+          className={`absolute dark:hidden w-screen top-0 z-10 ${className}`}
+        />
+
+        <div
+          style={{
+            backgroundImage: `url(${whiteBuildings2.src})`,
+            backgroundRepeat: "repeat-x",
+            backgroundSize: "405px, 10000%",
+            backgroundPosition: "top",
+            backgroundColor: "transparent",
+            animation: `slideBackground ${
+              isTouchDevice ? "20s" : "180s"
+            } linear reverse infinite`,
+          }}
+          className={`absolute w-screen top-0 -z-20 ${className}`}
         />
 
         <div

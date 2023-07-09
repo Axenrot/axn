@@ -5,13 +5,23 @@ type ProfilePictureProps = {
 
 const ProfilePicture = ({ className }: ProfilePictureProps) => {
   return (
-    <Image
-      src="/images/portrait2.png"
-      alt="portrait"
-      width={300}
-      height={300}
-      className={`bouncy flex-shrink ${className}`}
-    />
+    <>
+      <Image
+        src="/images/portrait-gray.png"
+        alt="portrait"
+        width={300}
+        height={300}
+        className={`bouncy hidden dark:block flex-shrink ${className}`}
+      />
+
+      <Image
+        src="/images/portrait-carmesim.png"
+        alt="portrait"
+        width={300}
+        height={300}
+        className={`bouncy dark:hidden flex-shrink ${className}`}
+      />
+    </>
   );
 };
 
