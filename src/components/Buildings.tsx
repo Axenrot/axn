@@ -33,10 +33,10 @@ const Buildings = ({ className }: BuildingsProps) => {
               isTouchDevice ? "20s" : "180s"
             } linear reverse infinite`,
           }}
-          className={`absolute dark:hidden w-screen top-0 z-10 ${className}`}
+          className={`absolute w-screen top-0 z-10 ${className}`}
         />
 
-        <div
+        {/* <div
           style={{
             backgroundImage: `url(${whiteBuildings2.src})`,
             backgroundRepeat: "repeat-x",
@@ -48,7 +48,7 @@ const Buildings = ({ className }: BuildingsProps) => {
             } linear reverse infinite`,
           }}
           className={`absolute w-screen top-0 -z-20 ${className}`}
-        />
+        /> */}
 
         <div
           style={{
@@ -89,7 +89,7 @@ const Buildings = ({ className }: BuildingsProps) => {
               isTouchDevice ? "25s" : "250s"
             } linear infinite`,
           }}
-          className={`absolute dark:hidden w-screen opacity-50 top-0 -z-20 ${className}`}
+          className={`absolute w-screen opacity-50 top-0 -z-20 ${className}`}
         />
 
         <div
@@ -103,7 +103,7 @@ const Buildings = ({ className }: BuildingsProps) => {
               isTouchDevice ? "22s" : "220s"
             } linear reverse infinite`,
           }}
-          className={`absolute dark:hidden w-screen opacity-20 top-0 -z-20 ${className}`}
+          className={`absolute w-screen opacity-20 top-0 -z-20 ${className}`}
         />
       </span>
     </div>
