@@ -10,7 +10,10 @@ import Image from "next/image";
 
 const Techs = () => {
   return (
-    <div className="flex flex-row gap-[6px] md:gap-12 xl:gap-24 2xl:gap-32 items-center justify-between px-3 sm:px-12 py-6 font-semibold">
+    <div
+      id="techs-container"
+      className="flex flex-row gap-[6px] md:gap-12 xl:gap-24 2xl:gap-32 items-center justify-between px-3 sm:px-12 py-6 font-semibold"
+    >
       <div id="react" onMouseEnter={() => {}} className="w-fit">
         <Image
           src={react}

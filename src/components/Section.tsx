@@ -46,20 +46,13 @@ const Section = ({ selectedOption }: SectionProps) => {
   return (
     <div
       id=""
-      className={`${
-        trigger && selectedOption ? "h-1/2" : "h-9"
-      } relative flex flex-col justify-center transition-all pb-12 flex-shrink duration-1000 self-end w-full mt-auto text-white bg-black z-50  dark:filter invert filter-none`}
+      className={`relative py-40 flex flex-col justify-center transition-all pb-12 flex-shrink duration-1000 self-end w-full text-white bg-black z-50  dark:filter invert filter-none`}
     >
-      <Buildings className={`h-[90px]`} />
       <section
         className={`self-center container px-3 h-4/5 items-center transition-all duration-300 rounded-lg overflow-hidden shadow-[inset_-0px_-0px_150px_rgba(69,60,53,0.05)]`}
       >
-        <div
-          className={`flex flex-col gap-2 h-full p-3  ${
-            trigger && selectedOption ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <h1 className="w-full text-3xl font-bold text-center opacity-80">
+        <div className={`flex flex-col gap-2 h-full p-3`}>
+          <h1 className="w-full text-3xl font-bold text-start opacity-80">
             {currentSelection}
           </h1>
           <div className="h-full overflow-y-auto">{renderSelection()}</div>

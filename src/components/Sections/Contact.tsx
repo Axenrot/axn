@@ -2,7 +2,10 @@ import Link from "next/link";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col justify-center h-full gap-3 text-xl font-light">
+    <div
+      id="contact-container"
+      className="flex flex-col justify-center h-full gap-3 text-xl font-light"
+    >
       <span>
         LinkedIn:{" "}
         <Link
