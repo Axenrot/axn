@@ -1,19 +1,13 @@
 "use client";
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 type MenuItemProps = {
   message: string;
   button: string;
-  selectOption: Dispatch<SetStateAction<string>>;
-  selectedOption: string;
+  id: string;
 };
 
-const MenuItem = ({
-  message,
-  button,
-  selectOption,
-  selectedOption,
-}: MenuItemProps) => {
+const MenuItem = ({ message, button, id }: MenuItemProps) => {
   const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
@@ -25,11 +19,10 @@ const MenuItem = ({
   return (
     <button
       onClick={() => {
-        if (selectedOption == button) {
-          selectOption("");
-        } else {
-          selectOption(button);
-        }
+        document?.getElementById(id)?.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
       }}
       className="relative flex justify-center gap-3 text-5xl font-bold text-center transition-all duration-300 cursor-pointer select-none sm:text-6xl w-fit group lg:text-7xl"
     >

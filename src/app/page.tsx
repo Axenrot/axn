@@ -2,35 +2,27 @@
 import { useState } from "react";
 import ProfileMenu from "@/components/ProfileMenu";
 import ProfilePicture from "@/components/ProfilePicture";
-import Section from "@/components/Section";
 import "../app/globals.css";
+import About from "@/components/Sections/About";
+import Jobs from "@/components/Sections/Jobs";
+import Contact from "@/components/Sections/Contact";
 
 const Home = () => {
-  const [selectedOption, setSelectedOption] = useState("");
   return (
     <main
-      className={`flex flex-col items-center gap-12 overflow-hidden justify-center w-full h-full ${
-        selectedOption ? "" : ""
-      }`}
+      className={`flex flex-col items-center gap-12 overflow-hidden justify-center w-full h-full`}
     >
       <div
-        className={`flex container flex-col items-center justify-center h-full gap-6 ${
-          selectedOption ? "lg:gap-24 sm:flex-row" : " lg:gap-24 sm:flex-row"
-        }`}
+        className={`flex container flex-col p-12 lg:flex-row items-center justify-center h-full gap-6`}
       >
         <ProfilePicture
-          className={`sm:w-1/3 md:w-1/2 lg:w-1/4 ${
-            selectedOption
-              ? "transition-all duration-1000 absolute opacity-10 translate-y-[-200%] sm:translate-y-0 sm:opacity-100 sm:relative z-10 fadeout-up sm:animate-none"
-              : "w-[250px] fadein"
-          }`}
+          className={`sm:w-1/3 md:w-1/2 lg:w-1/4 transition-all duration-1000 absolute opacity-10 translate-y-[-200%] sm:translate-y-0 sm:opacity-100 sm:relative z-10 fadeout-up sm:animate-none`}
         />
-        <ProfileMenu
-          selectedOption={selectedOption}
-          selectOption={setSelectedOption}
-        />
+        <ProfileMenu />
       </div>
-      <Section selectedOption={selectedOption} />
+      <About />
+      <Jobs />
+      <Contact />
     </main>
   );
 };
