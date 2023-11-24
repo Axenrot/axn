@@ -21,7 +21,7 @@ const Buildings = ({ className }: BuildingsProps) => {
     <div
       className={`${className} absolute bottom-[100%] z-50 self-start w-full`}
     >
-      <span className="relativ h-fit">
+      <span className="relative h-fit">
         <div
           style={{
             backgroundImage: `url(${darkBuildings.src})`,
