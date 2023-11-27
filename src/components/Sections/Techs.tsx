@@ -19,7 +19,7 @@ const Techs = () => {
         repellendus placeat modi earum aspernatur voluptatem.
       </span>
 
-      <TagCloud
+      {/* <TagCloud
         options={(w: Window & typeof globalThis): TagCloudOptions => ({
           radius: Math.min(500, w.innerWidth, w.innerHeight) / 2,
           maxSpeed: "fast",
@@ -50,7 +50,7 @@ const Techs = () => {
             className="w-full transition-all duration-300 hover:scale-125 filter invert"
           />,
         ]}
-      </TagCloud>
+      </TagCloud> */}
       {/* <div className="flex flex-row gap-[6px] md:gap-12 xl:gap-24 2xl:gap-32 items-center justify-between px-3 sm:px-12 py-6 font-semibold">
         <div id="react" onMouseEnter={() => {}} className="w-fit">
           <Image

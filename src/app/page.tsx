@@ -1,12 +1,11 @@
 "use client";
-import { useState } from "react";
 import ProfileMenu from "@/components/ProfileMenu";
 import ProfilePicture from "@/components/ProfilePicture";
-import "../app/globals.css";
 import About from "@/components/Sections/About";
 import Jobs from "@/components/Sections/Jobs";
 import Contact from "@/components/Sections/Contact";
 import Techs from "@/components/Sections/Techs";
+import "../app/globals.css";
 
 const Home = () => {
   return (

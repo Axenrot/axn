@@ -1,5 +1,4 @@
 import Buildings from "../Buildings";
-import Techs from "./Techs";
 
 const About = () => {
   return (
